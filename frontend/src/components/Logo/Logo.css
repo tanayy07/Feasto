@@ -1,0 +1,33 @@
+/* load Poppins from Google Fonts in your index.html */
+.logo {
+    display:flex;
+    align-items:center;
+    gap:12px;
+    min-width: 130px;
+    margin-right: -5px;
+    margin-left: 10px;
+  }
+  .logo-icon { width:48px; height:48px; flex:0 0 48px; }
+.logo-text {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 2.3rem;
+    font-weight: 650;                   
+    background: linear-gradient(90deg,#FF6B35,#FFB86B);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+  
+  @keyframes pulse {
+    0% { transform: scale(1); color: #ff6b35; }
+    50% { transform: scale(1.1); color: #ff9f68; }
+    100% { transform: scale(1); color: #ff6b35; }
+  }
+    
+  
+
+.logo-text:hover {
+    color: #ff8c42; /* Lighter orange on hover */
+}

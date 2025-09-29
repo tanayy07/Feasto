@@ -1,0 +1,119 @@
+.header{
+    height: 52.8vw;  
+    margin: 0;     
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-top: -80px;                /* Move video up to cover navbar */
+    padding-top: 80px;                /* Add padding to push content down */
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+.header-button {
+    background: rgba(36, 43, 70, 0.30);           /* semi-transparent glassy blue */
+    border-radius: 50px;
+    padding: 1vw 2.3vw;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Inter', 'Poppins', sans-serif;
+    border: 1.5px solid rgba(255,255,255,0.18);   /* soft frosted border */
+    backdrop-filter: blur(12px) saturate(150%);
+    box-shadow: 0 6px 24px rgba(44,104,255,0.13), 0 1.5px 16px rgba(255,255,255,0.09);
+    transition:
+        background 0.22s,
+        color 0.16s,
+        border 0.18s,
+        box-shadow 0.16s,
+        transform 0.19s;
+}
+
+.header-button:hover {
+    background: tomato;                        /* EXACT match to .navbar a:hover */
+    color: #fff;                               /* keep the text white for contrast */
+    border: 1.5px solid tomato;                /* subtle accent border */
+    box-shadow: 0 12px 36px rgba(255,99,71,0.22), 0 3px 24px rgba(255,255,255,0.10);
+    transform: scale(1.06) translateY(-2px);
+    text-shadow: 0 1px 8px rgba(36,36,56,0.14);
+}
+
+.header-button {
+    
+    background-color: white;
+    border-radius: 50px;
+    padding: 1vw 2.3vw;
+    color: #747474;
+    text-decoration: none;  
+}
+.header-contents p{
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 300;        /* Lighter font weight */
+    letter-spacing: 0.5px;   /* Better spacing */
+    line-height: 1.4;        /* Better line height */
+    opacity: 0.9;   
+    animation: fadeIn 3s;        /* Slightly transparent */
+}
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;
+    z-index: 1; 
+}
+.header-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    z-index: -1;
+
+}
+.header-contents h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 4.7vw;
+}
+.header-contents p{
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+    font-size: 1.1vw;
+}
+.explore-menu {
+    margin-top: 25px;       
+}
+.header-contents button{
+    border: none;
+    color: #747474;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw,13px);
+    border-radius: 50px;
+}
+@media (max-width:1050px) {
+    .header-contents{
+        max-width: 45%;
+    }
+}
+@media (max-width:750px) {
+    .header-contents{
+        max-width: 65%;
+    }
+    .header-contents p{
+        display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
+}
