@@ -18,9 +18,11 @@ hr{
     border: none;
     height: 1px;
     background-color: #a9a9a9;
+    margin-top: 70px;
 }
 .app-content{
     display: flex;
+    margin-top: 0;
 }
 .flex-col{
     display: flex;

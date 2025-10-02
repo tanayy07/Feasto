@@ -1,5 +1,5 @@
 .navbar {
-    padding: 17px 20px;                    /* Proper padding */
+    padding: 17px 20px;                  
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,7 +7,7 @@
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 16px rgba(0,0,0,0.1);
     -webkit-backdrop-filter: blur(2px);
-    z-index: 1000;                         /* Single z-index */
+    z-index: 1000;                        
     position: fixed;
     top: 0;
     left: 0;
@@ -49,9 +49,9 @@
 
 .navbar button{
     background: transparent;
-    font-size: 16px;
-    color: #49557e;
-    border: 1px solid tomato;
+    font-size: 1rem;
+    color: #fff;
+    border: 1px solid rgb(226, 226, 226);
     padding: 10px 30px;
     border-radius: 50px;
     cursor: pointer;
@@ -59,7 +59,12 @@
 }
 
 .navbar button:hover{
-    background-color: #fff4f2;
+    background: rgba(235, 241, 255, 0.10);                       
+    color: #fff;
+    border: 1px solid #609aff;                                   
+    box-shadow: 0 0 0 4px rgba(140,168,255,0.15);
+    backdrop-filter: blur(6px) saturate(125%);
+    transform: scale(1.04) translateY(-1px);
 }
 
 .navbar .active{
@@ -71,7 +76,7 @@
     cursor: pointer;
 }
 .navbar-search-icon{
-    z-index: 10000;                  /* Even higher for menu items */
+    z-index: 10000;               
     position: relative;
 }
 
@@ -86,7 +91,7 @@
     right: -8px;
 }
 .navbar-profile{
-    z-index: 10000;                  /* Even higher for menu items */
+    z-index: 10000;                  
     position: relative;
 }
 .nav-profile-dropdown{
